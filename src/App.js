@@ -11,6 +11,7 @@ import Dashboard from './components/dashboardComponents/Dashboard';
 import Loading from './components/Loading';
 import Mobile from './components/mobile/Mobile';
 
+
 // function initializeAnalytics() {
 //   ReactGA.initialize('UA-157827018-1');
 //   ReactGA.pageview('/home');
