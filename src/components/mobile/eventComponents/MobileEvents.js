@@ -9,7 +9,7 @@ import AddEventButton from '../AddEventButton'
 const getTemplateList = async ({ googleId }) => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_ENDPOINT_URL}/api/template/${googleId}`
+        `https://d8pickerlabs22.herokuapp.com/api/template/${googleId}`
       );
       return response.data;
     } catch (error) {

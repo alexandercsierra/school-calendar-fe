@@ -31,7 +31,7 @@ export const addTemplate = async (data, { googleId }) => {
   const template = { ...data, googleId };
   try {
     const response = await axios.post(
-      `${process.env.REACT_APP_ENDPOINT_URL}/api/template`,
+      `https://d8pickerlabs22.herokuapp.com/api/template`,
       template
     );
     return response.data;
@@ -56,7 +56,7 @@ export const convertEvents = (selected, starttime, endtime, zone, summary, descr
 export const deleteTemplate = async id => {
   try {
     const response = await axios.delete(
-      `${process.env.REACT_APP_ENDPOINT_URL}/api/template/${id}`
+      `https://d8pickerlabs22.herokuapp.com/api/template/${id}`
     );
     return response.data;
   } catch (error) {
