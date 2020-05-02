@@ -54,7 +54,7 @@ const MobileChooseDateForm = ({starttime, endtime, summary, id, templateList}) =
   //controls the hiding and showing of the actual delete button through toggling a class
   const [delClass, setDelClass] = useState('hide')
 
-  console.log('id', id)
+  
 
   //long-touch to delete an event
   const handleTouch = e => {

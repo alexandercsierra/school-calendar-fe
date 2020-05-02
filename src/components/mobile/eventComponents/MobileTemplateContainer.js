@@ -14,17 +14,20 @@ const MobileTemplateContainer = ({templateList}) => {
             </Container>
             <EventDiv>
             {templateList &&
-              templateList.map(t => (
-                <MobileChooseDateForm
-                  key={t._id}
-                  id={t._id}
-                  starttime={t.starttime}
-                  endtime={t.endtime}
-                  summary={t.summary}
-                  description={t.description}
-                  templateList={templateList}/>
+              templateList.map(t => {
+                return (
                 
-              ))}
+                  <MobileChooseDateForm
+                    key={t.id}
+                    id={t.id}
+                    starttime={t.starttime}
+                    endtime={t.endtime}
+                    summary={t.summary}
+                    description={t.description}
+                    templateList={templateList}/>
+                  
+                )
+              })}
               </EventDiv>
           </>
   );

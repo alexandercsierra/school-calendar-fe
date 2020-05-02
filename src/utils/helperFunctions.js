@@ -67,7 +67,7 @@ export const deleteTemplate = async id => {
 //deletes event templates from backend, updates templateList state to reflect this. It also clears whatever dates were currently selected and turns of date selection mode, although these are probably irrelevant on mobile due to component restructure.
 export const handleDelete = async (id, deleteTemplate, templateList, setTemplateList, clearSelected, setTemplateFormOpen) => {
   await deleteTemplate(id);
-  const templates = templateList.filter(template => template._id !== id);
+  const templates = templateList.filter(template => template.id !== id);
   setTemplateList(templates);
   clearSelected();
   setTemplateFormOpen(false);
