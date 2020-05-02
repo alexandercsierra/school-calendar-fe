@@ -32,8 +32,8 @@ const TemplateContainer = () => {
             {templateList &&
               templateList.map(t => (
                 <ChooseDateForm
-                  key={t._id}
-                  id={t._id}
+                  key={t.id}
+                  id={t.id}
                   starttime={t.starttime}
                   endtime={t.endtime}
                   summary={t.summary}
