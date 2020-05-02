@@ -15,7 +15,7 @@ function AuthProvider({ children }) {
       'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'
     ],
     ux_mode: 'redirect',
-    redirect_uri: `${process.env.REACT_APP_BASE_URL}/authenticate/google`,
+    redirect_uri: `https://d8picker22.now.sh/authenticate/google`,
     onLoaded: useCallback(gapi => {
       setApi(calendarApi(gapi));
     }, [])
