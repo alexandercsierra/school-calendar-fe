@@ -19,4 +19,3 @@ This was a build-on group project where I contributed as a frontend developer. I
 |React Router|
 |React Window|
 |Enzyme|
-|MongoDB|
